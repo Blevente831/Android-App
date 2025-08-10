@@ -1,0 +1,204 @@
+{
+  "lighting": {
+    "name": "Lighting",
+    "properties": {
+      "color": {
+        "type": "color",
+        "default": "#FFFFFF"
+      },
+      "brightness": {
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "default": 0.8
+      }
+    }
+  },
+  "light": {
+    "name": "Light",
+    "properties": {
+      "color": {
+        "type": "color",
+        "default": "#FFFFFF"
+      },
+      "brightness": {
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "default": 0.8
+      }
+    }
+  },
+  "thermostat": {
+    "name": "Thermostat",
+    "properties": {
+      "temperature": {
+        "type": "number",
+        "min": 10,
+        "max": 32,
+        "default": 22
+      },
+      "mode": {
+        "type": "enum",
+        "values": ["heat", "cool", "auto", "off"],
+        "default": "auto"
+      }
+    }
+  },
+  "switch": {
+    "name": "Switch",
+    "properties": {
+      "isOn": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "speaker": {
+    "name": "Speaker",
+    "properties": {
+      "volume": {
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "default": 0.5
+      },
+      "playing": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "door": {
+    "name": "Door",
+    "properties": {
+      "open": {
+        "type": "boolean", 
+        "default": false
+      },
+      "locked": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  },
+  "fan": {
+    "name": "Fan",
+    "properties": {
+      "speed": {
+        "type": "number",
+        "min": 0,
+        "max": 100,
+        "default": 50
+      },
+      "oscillate": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "sensor": {
+    "name": "Sensor",
+    "properties": {
+      "type": {
+        "type": "enum",
+        "values": ["motion", "temperature", "humidity", "light", "door"],
+        "default": "motion"
+      },
+      "value": {
+        "type": "number",
+        "default": 0
+      },
+      "triggered": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "camera": {
+    "name": "Camera",
+    "properties": {
+      "recording": {
+        "type": "boolean",
+        "default": false
+      },
+      "nightMode": {
+        "type": "boolean",
+        "default": true
+      },
+      "rotation": {
+        "type": "number",
+        "min": 0,
+        "max": 360,
+        "default": 0
+      }
+    }
+  },
+  "security": {
+    "name": "Security",
+    "properties": {
+      "armed": {
+        "type": "boolean",
+        "default": false
+      },
+      "sensitivity": {
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "default": 0.7
+      },
+      "alertMode": {
+        "type": "enum",
+        "values": ["silent", "alert", "alarm"],
+        "default": "alert"
+      }
+    }
+  },
+  "entertainment": {
+    "name": "Entertainment",
+    "properties": {
+      "playing": {
+        "type": "boolean", 
+        "default": false
+      },
+      "volume": {
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "default": 0.5
+      },
+      "source": {
+        "type": "string",
+        "default": "HDMI 1"
+      }
+    }
+  },
+  "appliance": {
+    "name": "Appliance",
+    "properties": {
+      "isOn": {
+        "type": "boolean",
+        "default": false
+      },
+      "mode": {
+        "type": "string",
+        "default": "normal"
+      },
+      "timer": {
+        "type": "number",
+        "min": 0,
+        "max": 480,
+        "default": 0
+      }
+    }
+  },
+  "other": {
+    "name": "Other",
+    "properties": {
+      "isOn": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  }
+}
