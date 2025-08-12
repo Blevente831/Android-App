@@ -1,5 +1,6 @@
 Login Page
 <img width="250" height="516" alt="Screenshot 2025-06-17 222458" src="https://github.com/user-attachments/assets/43a63535-d03b-42c4-be4f-2ef534a8a36b" />
+
 Registration page
 <img width="260" height="545" alt="Screenshot 2025-06-17 204504" src="https://github.com/user-attachments/assets/910e2054-ff64-482a-87ea-a8d31e7a0059" />
 Dashboard page
